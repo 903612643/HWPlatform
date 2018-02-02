@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntranetServerCheck</key>
+	<string>http://10.84.11.60:8008/ApkVersion/checkMainServer.html</string>
+	<key>InternetServerCheck</key>
+	<string>http://202.103.48.15/checkNetPage.html</string>
+	<key>SmtpAddress</key>
+	<string>smtp.sinopec.com</string>
+	<key>POPAddress</key>
+	<string>pop3.sinopec.com</string>
+	<key>SmtpPort</key>
+	<string>25</string>
+	<key>POPPort</key>
+	<string>110</string>
+	<key>LoadMailCount</key>
+	<string>10</string>
+	<key>MailLastName</key>
+	<string>@sinopec.com</string>
+	<key>SwitchGesture</key>
+	<string>false</string>
+	<key>SwitchVPN</key>
+	<string>true</string>
+	<key>SwitchRecord</key>
+	<string>true</string>
+	<key>VPN_Pwd</key>
+	<string></string>
+	<key>VPN_User</key>
+	<string></string>
+	<key>VPN_Port</key>
+	<string>443</string>
+	<key>VPN_IP</key>
+	<string>202.103.48.90</string>
+	<key>insertUser_soapAction</key>
+	<string>http://www.hanweikeji.com/Pt4Interface/InsertUserPwdAndReturnTransitId</string>
+	<key>Login_soapAction</key>
+	<string>http://www.hanweikeji.com/Pt4Interface/CheckUserPwdEx</string>
+	<key>thired_soapAction</key>
+	<string>urn:sso.combest.com/login</string>
+	<key>insertUpdateInfo_soapAction</key>
+	<string>http://tempuri.org/UpdateAppVersion</string>
+	<key>third_LoginUrl</key>
+	<string>http://10.84.11.26/portal/combest_auth.nsf/CBWebSrv_org</string>
+	<key>MainUrl</key>
+	<string>http://10.84.11.60:8008/webptframe/Home/Index</string>
+	<key>LoginUrl</key>
+	<string>http://10.84.11.60:8008/PTInterface/PtInterface.asmx</string>
+	<key>insertUpdateInfo</key>
+	<string>http://10.84.11.60:8008/webptframe/HWPTWeb.asmx</string>
+	<key>Thirdtoken</key>
+	<string></string>
+	<key>ModuleTransitId</key>
+	<string></string>
+</dict>
+</plist>

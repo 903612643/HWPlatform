@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YwI-AZ-WKi" customClass="FooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-BM-qjP">
+                    <rect key="frame" x="8" y="7" width="304" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.94873420320000001" green="0.94873420320000001" blue="0.94873420320000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title=" 加载更多…">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadMoreBtnClicked:" destination="YwI-AZ-WKi" eventType="touchUpInside" id="NCY-IV-8OR"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggw-rs-QAc" userLabel="正在加载时的提示">
+                    <rect key="frame" x="8" y="0.0" width="304" height="44"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uHC-3T-sL3">
+                            <rect key="frame" x="142" y="2" width="20" height="20"/>
+                            <animations/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在加载中…" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4u-eT-7Gb">
+                            <rect key="frame" x="111" y="23" width="110" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="eEK-c6-8f6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration" label=""/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="uHC-3T-sL3" secondAttribute="bottom" constant="22" id="C4m-I6-bQQ"/>
+                        <constraint firstAttribute="bottom" secondItem="t4u-eT-7Gb" secondAttribute="bottom" id="J6Q-Xp-GTo"/>
+                        <constraint firstItem="t4u-eT-7Gb" firstAttribute="top" secondItem="uHC-3T-sL3" secondAttribute="bottom" constant="1" id="Pfc-ew-bXG"/>
+                        <constraint firstItem="uHC-3T-sL3" firstAttribute="centerX" secondItem="Ggw-rs-QAc" secondAttribute="centerX" id="cJz-DB-C66"/>
+                        <constraint firstItem="uHC-3T-sL3" firstAttribute="top" secondItem="Ggw-rs-QAc" secondAttribute="top" constant="2" id="vkA-rD-j5o"/>
+                        <constraint firstAttribute="trailing" secondItem="t4u-eT-7Gb" secondAttribute="trailing" constant="83" id="yof-6k-Wph"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ggw-rs-QAc" firstAttribute="centerY" secondItem="cAk-BM-qjP" secondAttribute="centerY" id="0D6-kD-pMj"/>
+                <constraint firstItem="Ggw-rs-QAc" firstAttribute="leading" secondItem="YwI-AZ-WKi" secondAttribute="leading" constant="8" id="90r-p4-lGG"/>
+                <constraint firstItem="cAk-BM-qjP" firstAttribute="centerY" secondItem="YwI-AZ-WKi" secondAttribute="centerY" id="EG0-9m-d2u"/>
+                <constraint firstItem="Ggw-rs-QAc" firstAttribute="centerY" secondItem="YwI-AZ-WKi" secondAttribute="centerY" id="Fbl-YW-Ecc"/>
+                <constraint firstItem="cAk-BM-qjP" firstAttribute="trailing" secondItem="YwI-AZ-WKi" secondAttribute="trailingMargin" id="Sf0-7Z-ovW"/>
+                <constraint firstItem="cAk-BM-qjP" firstAttribute="centerX" secondItem="Ggw-rs-QAc" secondAttribute="centerX" id="cto-7P-OKF"/>
+                <constraint firstItem="Ggw-rs-QAc" firstAttribute="centerX" secondItem="YwI-AZ-WKi" secondAttribute="centerX" id="ltY-fY-n24"/>
+                <constraint firstItem="cAk-BM-qjP" firstAttribute="leading" secondItem="YwI-AZ-WKi" secondAttribute="leadingMargin" id="mRF-Sa-JHv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadMoreBtn" destination="cAk-BM-qjP" id="aay-Pa-07m"/>
+                <outlet property="moreView" destination="Ggw-rs-QAc" id="uDU-xg-ZQU"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="210"/>
+        </view>
+    </objects>
+</document>
